@@ -148,3 +148,60 @@ aside.closed .aside-nav__option a p {
 .aside-nav__option.active a {
     color: #5459EA;
 }
+
+.aside-profile__quit {
+    color: white;
+    position: absolute;
+    right: 20px;
+    display: none;
+}
+
+/* || phone nav */
+
+
+@media (max-width: 600px) {
+    aside {
+        position: fixed;
+        left: -290px;
+        top: 0;
+        max-width: 280px;
+        background-color: #101010;
+        padding: 20px 20px;
+        overflow-y: scroll;
+        border-radius: 0 30px 30px 0;
+        transition: left 0.4s;
+    }
+
+    aside.active {
+        left: 0;
+    }
+
+    .aside-profile__quit {
+        display: inline-block;
+    }
+
+    .aside-nav__option::before {
+
+        display: none;
+    }
+
+    .aside-nav__option::after {
+        display: none;
+    }
+
+    .aside-nav__option {
+        display: flex;
+        text-align: left;
+        width: fit-content;
+    }
+
+    .aside-nav__option.active {
+        background-color: white;
+        border-radius: 25px;
+    }
+
+    .aside-nav__option.active::after,
+    .aside-nav__option.active::before {
+        display: none;
+    }
+}
