@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TaxiParks</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/genera.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <main>
+      <section class="login-section">
+        <div class="login-section__image"></div>
+        <div class="login-section__form">
+          <div class="login__logo">
+            <img
+              src="images/main-logo.svg"
+              alt="main logo"
+              class="login__main-logo"
+            />
+            <h1 class="login__heading">Log In to Admin Panel</h1>
+            <h5 class="login__sub-heading">
+              Enter your phone number and password below
+            </h5>
+          </div>
+
+          <form action="pages/dashboard.html" class="login__form">
+            <div class="login__input-container">
+              <label for="number" class="login__input-label"
+                >PHONE NUMBER</label
+              >
+              <input
+                type="number"
+                name="number"
+                id="number"
+                placeholder="Enter your phone number"
+                class="login__input"
+                required
+              />
+            </div>
+
+            <div class="login__input-container">
+              <label for="password" class="login__input-label">PASSWORD</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+                class="login__input"
+                required
+              />
+            </div>
+
+            <button type="submit" class="login__login-button">Log In</button>
+          </form>
+
+          <p class="login__create-account">
+            Don't have an account? <a href="#">Sing up</a>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
