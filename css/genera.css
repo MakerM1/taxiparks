@@ -2,3 +2,8 @@ body {
     background-color: #101010;
     font-family: 'Inter', sans-serif;
 }
+
+.main-container {
+    display: flex;
+    padding: 22px;
+}

@@ -1,0 +1,150 @@
+main {
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+aside {
+    max-width: 270px;
+    width: 100%;
+    min-height: 100vh;
+    transition: max-width 0.4s;
+}
+
+aside.closed {
+    max-width: 70px;
+}
+
+.aside__pfp {
+    border: 2px solid white;
+    padding: 4px;
+    max-width: 44px;
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside-profile {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    gap: 8px;
+    margin-bottom: 27px;
+    cursor: pointer;
+}
+
+.aside__pfp img {
+    max-width: 40px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.aside-profile__name {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.aside-profile__number {
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 17px;
+}
+
+aside.closed .aside-profile__name-number {
+    display: none;
+}
+
+.aside-nav__heading {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+aside.closed .aside-nav__heading span {
+    display: none;
+}
+
+.aside-nav__options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.aside-nav__option {
+    padding: 12px;
+    border-radius: 30px 0 0 30px;
+    position: relative;
+}
+
+.aside-nav__option::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/nav-indent-1.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: -24px;
+    right: 0;
+    display: none;
+}
+
+.aside-nav__option::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('../images/nav-indent-2.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -24px;
+    right: 0;
+    display: none;
+}
+
+.aside-nav__option.active {
+    background-color: white;
+}
+
+.aside-nav__option.active::after,
+.aside-nav__option.active::before {
+    display: inline-block;
+}
+
+.aside-nav__option a {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    width: 100%;
+    justify-content: space-around;
+    gap: 15px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.aside-nav__option a p {
+    transition: all 0.2s;
+}
+
+aside.closed .aside-nav__option a p {
+    display: none;
+}
+
+.aside-nav__option a i {
+    font-size: 18px;
+}
+
+.aside-nav__option.active a {
+    color: #5459EA;
+}

@@ -1,0 +1,94 @@
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-section__left {
+    display: flex;
+    max-width: 570px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header-section__texts {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.fa-bars {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 8px 9px;
+    border-radius: 50%;
+    transition: all 0.2s;
+}
+
+.fa-bars:hover {
+    background-color: #10101030;
+}
+
+.fa-bars:active {
+    background-color: #1010104b;
+}
+
+.header-section__welcoming {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.header-section__welcoming span {
+    font-style: italic;
+}
+
+.header-section__messages {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.header-section__messages a {
+    color: var(--text-color-accent-link, #36F);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.header-section__messages a:hover {
+    text-decoration: underline;
+}
+
+.header-section__right {
+    max-width: 60px;
+    width: 100%;
+}
+
+.header-section__leave {
+    height: fit-content;
+    padding: 10px 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60px;
+    width: 100%;
+    transition: all 0.2s;
+}
+
+.header-section__leave:hover {
+    background-color: #10101030;
+}
+
+.header-section__leave:active {
+    background-color: #1010104b;
+}
+
+.header-section__leave img {
+    max-width: 40px;
+    width: 100%;
+}
