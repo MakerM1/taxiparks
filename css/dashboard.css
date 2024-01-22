@@ -6,6 +6,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 10px;
+    margin-bottom: 30px;
 }
 
 .knowledge-base {
@@ -349,5 +350,122 @@
 
     .top-drivers__phone {
         font-size: 10px;
+    }
+}
+
+/* || users table */
+
+.users-table {
+    display: flex;
+    justify-content: center;
+}
+
+.users-table__table {
+    text-align: center;
+    max-width: 1066px;
+    width: 100%;
+    border-collapse: separate;
+}
+
+.users-table th {
+    color: #505470;
+    font-size: 12px;
+    font-weight: 600;
+    vertical-align: middle;
+    padding: 16px 11px;
+    border-top: 1px solid #EFF0F4;
+    border-bottom: 1px solid #EFF0F4;
+    background: #F7F8FA;
+}
+
+.users-table th:first-child {
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+    border-left: 1px solid #EFF0F4;
+}
+
+.users-table th:last-child {
+    border-radius: 0 8px 8px 0;
+    border-right: none;
+    border-right: 1px solid #EFF0F4;
+}
+
+.users-table td {
+    color: var(--black, #192A3E);
+    font-size: 10px;
+    font-weight: 500;
+    vertical-align: middle;
+    padding: 16px 11px;
+}
+
+.users-table td input[type="checkbox"],
+.users-table th input[type="checkbox"] {
+    accent-color: #101010;
+}
+
+.users-table td p {
+    max-width: 150px;
+    width: 100;
+    margin: 0 auto;
+}
+
+.users-table__profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.users-table__profile img {
+    border-radius: 50%;
+}
+
+.users-table__name {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.users-table__phone {
+    color: var(--Text-Color-Hint, #8F9BB3);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.users-table__income {
+    border-radius: 9px;
+    background: rgba(36, 193, 143, 0.10);
+    color: #24C18F;
+    font-size: 9px;
+    font-weight: 500;
+    max-width: 100px;
+    width: 100%;
+    min-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.users-table__phone:hover {
+    text-decoration: underline;
+}
+
+.users-table__table {
+    border-bottom: 1px solid #EFF0F4;
+}
+
+@media (max-width: 750px) {
+
+    .users-table__table tr th:nth-child(3),
+    .users-table__table tr td:nth-child(3),
+    .users-table__table tr th:nth-child(4),
+    .users-table__table tr td:nth-child(4),
+    .users-table__table tr th:nth-child(5),
+    .users-table__table tr td:nth-child(5),
+    .users-table__table tr th:nth-child(6),
+    .users-table__table tr td:nth-child(6) {
+        display: none;
     }
 }
