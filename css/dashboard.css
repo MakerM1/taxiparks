@@ -1,0 +1,332 @@
+/* || knowledge drivers */
+
+.knowledge-base-topdrivers {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.knowledge-base {
+    max-width: 619px;
+    width: 100%;
+}
+
+.knowledge-base__folders {
+    max-width: 619px;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    overflow: scroll;
+    padding: 13px;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 36px;
+}
+
+.knowledge-base__folders::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.knowledge-base__folders::-webkit-scrollbar-thumb {
+    background-color: #101010;
+    border-radius: 50px;
+}
+
+.knowledge-base__folder {
+    width: 185px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    cursor: pointer;
+    scroll-snap-align: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.knowledge-base__folder p {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 14px;
+}
+
+.knowledge-base__folder .fa-angle-right {
+    font-size: 17px;
+    color: #2E3A59;
+    transition: all 0.3s;
+}
+
+.knowledge-base__folder:hover .fa-angle-right {
+    transform: translateX(5px);
+}
+
+.knowledge-base__folder .fa-folder-open {
+    font-size: 23px;
+}
+
+.knowledge-base__folder--blue {
+    background-color: rgba(51, 102, 255, 0.20);
+    color: #3366FF;
+}
+
+.knowledge-base__folder--yellow {
+    background: rgba(255, 149, 51, 0.20);
+    color: #FF9533;
+}
+
+.knowledge-base__folder--red {
+    background: rgba(255, 51, 63, 0.20);
+    color: #FF333F;
+}
+
+.knowledge-base__folder--green {
+    background-color: #93ffa370;
+    color: #2ceb49;
+}
+
+.knowledge-base__statistic {
+    max-width: 619px;
+    width: 100%;
+    background-color: #F7F9FC;
+    border-radius: 8px;
+    border: 1px solid #EFF0F4;
+    min-height: 400px;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.knowledge-base__statistic-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.knowledge-base__statistic-heading {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.knowledge-base__statistic-pages {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.knowledge-base__statistic-top p {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.knowledge-base__statistic-top i {
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.2s;
+    padding: 10px 13px;
+    border-radius: 50%;
+}
+
+.knowledge-base__statistic-top i:hover {
+    background-color: #10101030;
+}
+
+.knowledge-base__statistic-score {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #F0F0F0;
+    flex-wrap: wrap;
+}
+
+.knowledge-base__statistic-score-title {
+    font-size: 16px;
+}
+
+.knowledge-base__statistic-score-infos {
+    display: flex;
+    gap: 8px;
+}
+
+.knowledge-base__statistic-score-infos p {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.knowledge-base__statistic-score-info {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.knowledge-base__statistic-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.knowledge-base__statistic-dot--blue {
+    background-color: #3366FF;
+}
+
+.knowledge-base__statistic-dot--green {
+    background-color: #00D68F;
+}
+
+.knowledge-base__img img {
+    max-width: 555px;
+    width: 100%;
+}
+
+.knowledge-base__months-list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.knowledge-base__month {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    padding: 0 5px;
+}
+
+.knowledge-base__month::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    height: 249px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(135, 145, 171, 0.40) 46.78%, rgba(135, 145, 171, 0.00) 100%);
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.knowledge-base__month:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 1030px) {
+    .knowledge-base__month {
+        font-size: 10px;
+    }
+
+    .knowledge-base__statistic {
+        min-height: fit-content;
+    }
+
+    .knowledge-base__statistic-top i {
+        font-size: 14px;
+    }
+
+    .knowledge-base__statistic-top p {
+        font-size: 10px;
+    }
+
+    .knowledge-base__statistic-heading {
+        font-size: 14px;
+    }
+
+    .knowledge-base__statistic-score-title {
+        font-size: 14px;
+    }
+
+    .knowledge-base__statistic-score-info p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .knowledge-base__month {
+        display: none;
+    }
+}
+
+/* || top drivers */
+
+.top-drivers {
+    max-width: 402px;
+    width: 100%;
+}
+
+.top-drivers__main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.top-drivers__card {
+    max-width: 402px;
+    width: 100%;
+    background-color: #F7F9FC;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 18px 12px;
+    justify-content: space-between;
+}
+
+.top-driverrs__profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.top-drivers__name {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.top-drivers__phone {
+    color: var(--Text-Color-Hint, #8F9BB3);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.top-drivers__phone:hover {
+    text-decoration: underline;
+}
+
+.top-drivers__income-orders {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.top-drivers__orders,
+.top-drivers__income {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.top-drivers__orders span,
+.top-drivers__income span {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 20px;
+    font-weight: 600;
+}

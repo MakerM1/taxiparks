@@ -7,3 +7,10 @@ body {
     display: flex;
     padding: 22px;
 }
+
+.h2-style {
+    color: var(--Basic-700, #2E3A59);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 28px;
+}

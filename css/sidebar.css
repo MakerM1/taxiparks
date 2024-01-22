@@ -159,7 +159,7 @@ aside.closed .aside-nav__option a p {
 /* || phone nav */
 
 
-@media (max-width: 600px) {
+@media (max-width: 1030px) {
     aside {
         position: fixed;
         left: -290px;
@@ -168,12 +168,18 @@ aside.closed .aside-nav__option a p {
         background-color: #101010;
         padding: 20px 20px;
         overflow-y: scroll;
+        height: fit-content;
         border-radius: 0 30px 30px 0;
         transition: left 0.4s;
+        z-index: 100;
     }
 
     aside.active {
         left: 0;
+    }
+
+    .aside-nav__options {
+        gap: 5px;
     }
 
     .aside-profile__quit {
