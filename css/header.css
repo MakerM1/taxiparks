@@ -16,7 +16,7 @@
 .header-section__texts {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
 }
 
@@ -90,4 +90,10 @@
 .header-section__leave img {
     max-width: 40px;
     width: 100%;
+}
+
+@media (max-width: 1030px) {
+    .header-section__welcoming {
+        font-size: 16px;
+    }
 }

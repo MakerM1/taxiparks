@@ -330,3 +330,24 @@
     font-size: 20px;
     font-weight: 600;
 }
+
+@media (max-width: 1030px) {
+
+    .top-drivers__orders span,
+    .top-drivers__income span {
+        font-size: 15px;
+    }
+
+    .top-drivers__orders,
+    .top-drivers__income {
+        font-size: 10px;
+    }
+
+    .top-drivers__name {
+        font-size: 13px;
+    }
+
+    .top-drivers__phone {
+        font-size: 10px;
+    }
+}
