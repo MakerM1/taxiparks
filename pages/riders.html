@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2d3e948390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TaxiParks</title>
+    <link rel="icon" href="../images/icon-logo.svg" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/genera.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/riders.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <aside id="sideBar">
+        <div class="aside-profile">
+          <div class="aside__pfp">
+            <img src="../images/main-pfp.png" alt="pfp" />
+          </div>
+          <div class="aside-profile__name-number">
+            <p class="aside-profile__name">Samantha</p>
+            <p class="aside-profile__number">+998 (99) 436-46-15</p>
+          </div>
+          <div class="aside-profile__quit">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+        <nav class="aside-nav">
+          <p class="aside-nav__heading"><span>MAIN</span> MENU</p>
+          <ul class="aside-nav__options">
+            <li class="aside-nav__option">
+              <a href="dashboard.html">
+                <i class="fa-solid fa-table"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="aside-nav__option">
+              <a href="orders.html"
+                ><i class="fa-regular fa-newspaper"></i>
+                <p>Orders</p></a
+              >
+            </li>
+            <li class="aside-nav__option active">
+              <a href="#"
+                ><i class="fa-solid fa-user-clock"></i>
+                <p>Rides</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-users"></i>
+                <p>Clients</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-user-tie"></i>
+                <p>Drivers</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-dollar-sign"></i>
+                <p>Shift</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-globe"></i>
+                <p>Live map</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-car"></i>
+                <p>Car classes</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-code-branch"></i>
+                <p>Branches</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-users-gear"></i>
+                <p>Moderators</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-sliders"></i>
+                <p>Settings</p></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <section class="header-section">
+          <div class="header-section__left">
+            <i class="fa-solid fa-bars" id="hamburgerMenu"></i>
+            <div class="header-section__texts">
+              <p class="header-section__welcoming">
+                Good Morning, <span>M</span>aharram 👋
+              </p>
+              <p class="header-section__messages">
+                you have <a href="#">1 new message</a>
+              </p>
+            </div>
+          </div>
+          <div class="header-section__right">
+            <a href="../index.html" class="header-section__leave">
+              <img src="../images/leave-icon.svg" alt="leave" />
+            </a>
+          </div>
+        </section>
+
+        <section class="riders">
+          <div class="riders__main-container">
+            <div class="riders__types">
+              <ul class="riders__types-list">
+                <li class="active">
+                  Pending (5) <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li>In progress (1) <i class="fa-solid fa-angle-right"></i></li>
+                <li>Completed (70) <i class="fa-solid fa-angle-right"></i></li>
+                <li>Upcoming (0) <i class="fa-solid fa-angle-right"></i></li>
+                <li>
+                  Pre cancelled (26) <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li>
+                  Cancelled by driver (1)
+                  <i class="fa-solid fa-angle-right"></i>
+                </li>
+                <li>In progress (5)</li>
+              </ul>
+            </div>
+            <table class="riders__table">
+              <thead>
+                <tr>
+                  <th>
+                    <input type="checkbox" />
+                  </th>
+                  <th>User</th>
+                  <th>Car Comfort</th>
+                  <th>Ordered Time</th>
+                  <th>Start Location</th>
+                  <th>Finish Location</th>
+                  <th>Income</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>
+                    <div class="riders__profile">
+                      <img
+                        src="../images/profile-pictures/pfp-7.png"
+                        alt="pfp"
+                      />
+                      <div class="riders__profile-info">
+                        <p class="riders__name">Sierra Ferguson</p>
+                        <a href="tel:+998994364615" class="riders__phone">
+                          +998 (99) 436-46-15</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td>simple</td>
+                  <td>04.12.2021 20:30</td>
+                  <td>
+                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                  </td>
+                  <td>
+                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                  </td>
+                  <td>
+                    <p class="riders__income">50 300 000 SUM</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>
+                    <div class="riders__profile">
+                      <img
+                        src="../images/profile-pictures/pfp-8.png"
+                        alt="pfp"
+                      />
+                      <div class="riders__profile-info">
+                        <p class="riders__name">Sierra Ferguson</p>
+                        <a href="tel:+998994364615" class="riders__phone">
+                          +998 (99) 436-46-15</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td>simple</td>
+                  <td>04.12.2021 20:30</td>
+                  <td>
+                    <p>21 Hamidulla Oripov ko'chasi, Тошкент, O'zbekiston</p>
+                  </td>
+                  <td>
+                    <p>21 Hamidulla Oripov ko'chasi, Тошкент, O'zbekiston</p>
+                  </td>
+                  <td>
+                    <p class="riders__income">300 000 SUM</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>
+                    <div class="riders__profile">
+                      <img
+                        src="../images/profile-pictures/pfp-10.png"
+                        alt="pfp"
+                      />
+                      <div class="riders__profile-info">
+                        <p class="riders__name">Juan Steward</p>
+                        <a href="tel:+998994364615" class="riders__phone">
+                          +998 (99) 436-46-15</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td>simple</td>
+                  <td>04.12.2021 20:30</td>
+                  <td>
+                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                  </td>
+                  <td>
+                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                  </td>
+                  <td>
+                    <p class="riders__income">50 300 000 SUM</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>
+                    <div class="riders__profile">
+                      <img
+                        src="../images/profile-pictures/pfp-11.png"
+                        alt="pfp"
+                      />
+                      <div class="riders__profile-info">
+                        <p class="riders__name">Juan Steward</p>
+                        <a href="tel:+998994364615" class="riders__phone">
+                          +998 (99) 436-46-15</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td>simple</td>
+                  <td>04.12.2021 20:30</td>
+                  <td>
+                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                  </td>
+                  <td>
+                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                  </td>
+                  <td>
+                    <p class="riders__income">50 300 000 SUM</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" />
+                  </td>
+                  <td>
+                    <div class="riders__profile">
+                      <img
+                        src="../images/profile-pictures/pfp-9.png"
+                        alt="pfp"
+                      />
+                      <div class="riders__profile-info">
+                        <p class="riders__name">Juan Steward</p>
+                        <a href="tel:+998994364615" class="riders__phone">
+                          +998 (99) 436-46-15</a
+                        >
+                      </div>
+                    </div>
+                  </td>
+                  <td>simple</td>
+                  <td>04.12.2021 20:30</td>
+                  <td>
+                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                  </td>
+                  <td>
+                    <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                  </td>
+                  <td>
+                    <p class="riders__income">50 300 000 SUM</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="riders__nav">
+              <p class="riders__nav-text">1-2 of items</p>
+              <div class="user-table__nav-options">
+                <div class="riders__nav-option disabled">
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="riders__nav-option active">1</div>
+                <div class="riders__nav-option">2</div>
+                <div class="riders__nav-option">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="../scripts/sidebar.js"></script>
+  </body>
+</html>
