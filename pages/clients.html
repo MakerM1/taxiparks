@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2d3e948390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TaxiParks</title>
+    <link rel="icon" href="../images/icon-logo.svg" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/genera.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/clients.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <aside id="sideBar">
+        <div class="aside-profile">
+          <div class="aside__pfp">
+            <img src="../images/main-pfp.png" alt="pfp" />
+          </div>
+          <div class="aside-profile__name-number">
+            <p class="aside-profile__name">Samantha</p>
+            <p class="aside-profile__number">+998 (99) 436-46-15</p>
+          </div>
+          <div class="aside-profile__quit">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+        <nav class="aside-nav">
+          <p class="aside-nav__heading"><span>MAIN</span> MENU</p>
+          <ul class="aside-nav__options">
+            <li class="aside-nav__option">
+              <a href="dashboard.html">
+                <i class="fa-solid fa-table"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="aside-nav__option">
+              <a href="orders.html"
+                ><i class="fa-regular fa-newspaper"></i>
+                <p>Orders</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="drivers-list.html"
+                ><i class="fa-solid fa-user-clock"></i>
+                <p>Rides</p></a
+              >
+            </li>
+            <li class="aside-nav__option active">
+              <a href="#"
+                ><i class="fa-solid fa-users"></i>
+                <p>Clients</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-user-tie"></i>
+                <p>Drivers</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-dollar-sign"></i>
+                <p>Shift</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-globe"></i>
+                <p>Live map</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-car"></i>
+                <p>Car classes</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-code-branch"></i>
+                <p>Branches</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-users-gear"></i>
+                <p>Moderators</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-sliders"></i>
+                <p>Settings</p></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <section class="header-section">
+          <div class="header-section__left">
+            <i class="fa-solid fa-bars" id="hamburgerMenu"></i>
+            <div class="header-section__texts">
+              <p class="header-section__welcoming">
+                Good Morning, <span>M</span>aharram 👋
+              </p>
+              <p class="header-section__messages">
+                you have <a href="#">1 new message</a>
+              </p>
+            </div>
+          </div>
+          <div class="header-section__right">
+            <a href="../index.html" class="header-section__leave">
+              <img src="../images/leave-icon.svg" alt="leave" />
+            </a>
+          </div>
+        </section>
+
+        <section class="drivers-list">
+          <form action="#" class="drivers-list__search-form">
+            <label for="nameSearch" class="h2-style"> Drivers list </label>
+            <div class="drivers-list__search-input">
+              <input
+                type="text"
+                placeholder="Search by Name"
+                id="nameSearch"
+                name="nameSearch"
+                class="drivers-list__search"
+              />
+              <button type="submit" class="drivers-list__search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </form>
+          <table class="drivers-list__table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>User</th>
+                <th>Total drivers-list</th>
+                <th>Total finished</th>
+                <th>Home Location</th>
+                <th>Work Location</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="../images/comment-icon.svg" alt="comment icon" />
+                </td>
+                <td>
+                  <div class="drivers-list__profile">
+                    <img src="../images/profile-pictures/pfp-7.png" alt="pfp" />
+                    <div class="drivers-list__profile-info">
+                      <p class="drivers-list__name">Sierra Ferguson</p>
+                      <a href="tel:+998994364615" class="drivers-list__phone">
+                        +998 (99) 436-46-15</a
+                      >
+                    </div>
+                  </div>
+                </td>
+                <td>132</td>
+                <td>6</td>
+                <td>
+                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                </td>
+                <td>
+                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                </td>
+                <td class="drivers-list__profile-edit">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="../images/comment-icon.svg" alt="comment icon" />
+                </td>
+                <td>
+                  <div class="drivers-list__profile">
+                    <img src="../images/profile-pictures/pfp-8.png" alt="pfp" />
+                    <div class="drivers-list__profile-info">
+                      <p class="drivers-list__name">Sierra Ferguson</p>
+                      <a href="tel:+998994364615" class="drivers-list__phone">
+                        +998 (99) 436-46-15</a
+                      >
+                    </div>
+                  </div>
+                </td>
+                <td>10</td>
+                <td>3</td>
+                <td>
+                  <p>21 Hamidulla Oripov ko'chasi, Тошкент, O'zbekiston</p>
+                </td>
+                <td>
+                  <p>21 Hamidulla Oripov ko'chasi, Тошкент, O'zbekiston</p>
+                </td>
+                <td class="drivers-list__profile-edit">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="../images/comment-icon.svg" alt="comment icon" />
+                </td>
+                <td>
+                  <div class="drivers-list__profile">
+                    <img
+                      src="../images/profile-pictures/pfp-10.png"
+                      alt="pfp"
+                    />
+                    <div class="drivers-list__profile-info">
+                      <p class="drivers-list__name">Juan Steward</p>
+                      <a href="tel:+998994364615" class="drivers-list__phone">
+                        +998 (99) 436-46-15</a
+                      >
+                    </div>
+                  </div>
+                </td>
+                <td>100</td>
+                <td>12</td>
+                <td>
+                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                </td>
+                <td>
+                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                </td>
+                <td class="drivers-list__profile-edit">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="../images/comment-icon.svg" alt="comment icon" />
+                </td>
+                <td>
+                  <div class="drivers-list__profile">
+                    <img
+                      src="../images/profile-pictures/pfp-11.png"
+                      alt="pfp"
+                    />
+                    <div class="drivers-list__profile-info">
+                      <p class="drivers-list__name">Juan Steward</p>
+                      <a href="tel:+998994364615" class="drivers-list__phone">
+                        +998 (99) 436-46-15</a
+                      >
+                    </div>
+                  </div>
+                </td>
+                <td>7</td>
+                <td>1</td>
+                <td>
+                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                </td>
+                <td>
+                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                </td>
+                <td class="drivers-list__profile-edit">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="../images/comment-icon.svg" alt="comment icon" />
+                </td>
+                <td>
+                  <div class="drivers-list__profile">
+                    <img src="../images/profile-pictures/pfp-9.png" alt="pfp" />
+                    <div class="drivers-list__profile-info">
+                      <p class="drivers-list__name">Juan Steward</p>
+                      <a href="tel:+998994364615" class="drivers-list__phone">
+                        +998 (99) 436-46-15</a
+                      >
+                    </div>
+                  </div>
+                </td>
+                <td>13</td>
+                <td>7</td>
+                <td>
+                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                </td>
+                <td>
+                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
+                </td>
+                <td class="drivers-list__profile-edit">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="drivers-list__bottom">
+            <p class="drivers-list__total">Total users: 98</p>
+            <div class="drivers-list__nav">
+              <p class="drivers-list__nav-text">1-2 of items</p>
+              <div class="user-table__nav-options">
+                <div class="drivers-list__nav-option disabled">
+                  <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="drivers-list__nav-option active">1</div>
+                <div class="drivers-list__nav-option">2</div>
+                <div class="drivers-list__nav-option">
+                  <i class="fa-solid fa-angle-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="../scripts/sidebar.js"></script>
+  </body>
+</html>

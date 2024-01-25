@@ -28,3 +28,14 @@ body::-webkit-scrollbar-thumb:hover {
     font-weight: 800;
     line-height: 28px;
 }
+
+section {
+    max-width: 1052px;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

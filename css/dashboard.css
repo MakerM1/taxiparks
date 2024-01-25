@@ -221,6 +221,7 @@
     background: linear-gradient(0deg, rgba(135, 145, 171, 0.40) 46.78%, rgba(135, 145, 171, 0.00) 100%);
     left: 0;
     bottom: 0;
+    transform: scaleZ();
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s;

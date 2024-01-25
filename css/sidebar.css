@@ -131,6 +131,11 @@ aside.closed .aside-nav__heading span {
     color: #FFF;
     font-size: 14px;
     font-weight: 600;
+    transition: all 0.2s;
+}
+
+.aside-nav__option a:hover {
+    color: rgb(205, 205, 205);
 }
 
 .aside-nav__option a p {
