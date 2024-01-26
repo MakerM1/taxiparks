@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2d3e948390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TaxiParks</title>
+    <link rel="icon" href="../images/icon-logo.svg" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/genera.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/drivers.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <aside id="sideBar">
+        <div class="aside-profile">
+          <div class="aside__pfp">
+            <img src="../images/main-pfp.png" alt="pfp" />
+          </div>
+          <div class="aside-profile__name-number">
+            <p class="aside-profile__name">Samantha</p>
+            <p class="aside-profile__number">+998 (99) 436-46-15</p>
+          </div>
+          <div class="aside-profile__quit">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+        <nav class="aside-nav">
+          <p class="aside-nav__heading"><span>MAIN</span> MENU</p>
+          <ul class="aside-nav__options">
+            <li class="aside-nav__option">
+              <a href="dashboard.html">
+                <i class="fa-solid fa-table"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="aside-nav__option">
+              <a href="orders.html"
+                ><i class="fa-regular fa-newspaper"></i>
+                <p>Orders</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="riders.html"
+                ><i class="fa-solid fa-user-clock"></i>
+                <p>Rides</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="clients.html"
+                ><i class="fa-solid fa-users"></i>
+                <p>Clients</p></a
+              >
+            </li>
+            <li class="aside-nav__option active">
+              <a href="#"
+                ><i class="fa-solid fa-user-tie"></i>
+                <p>Drivers</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-dollar-sign"></i>
+                <p>Shift</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-globe"></i>
+                <p>Live map</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-car"></i>
+                <p>Car classes</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-code-branch"></i>
+                <p>Branches</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-users-gear"></i>
+                <p>Moderators</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-sliders"></i>
+                <p>Settings</p></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <section class="header-section">
+          <div class="header-section__left">
+            <i class="fa-solid fa-bars" id="hamburgerMenu"></i>
+            <div class="header-section__texts">
+              <p class="header-section__welcoming">
+                Good Morning, <span>M</span>aharram 👋
+              </p>
+              <p class="header-section__messages">
+                you have <a href="#">1 new message</a>
+              </p>
+            </div>
+          </div>
+          <div class="header-section__right">
+            <a href="../index.html" class="header-section__leave">
+              <img src="../images/leave-icon.svg" alt="leave" />
+            </a>
+          </div>
+        </section>
+
+        <section class="driver-data">
+          <div class="driver-data__heading">
+            <h2 class="h2-style">Driver data</h2>
+            <i class="fa-regular fa-pen-to-square"></i>
+          </div>
+
+          <div class="driver-data__profile profile">
+            <div class="profile__left">
+              <div class="profile__pfp-placeholder">
+                <img src="../images/pfp-placeholder.svg" alt="" />
+              </div>
+              <div class="profile__infos">
+                <div class="profile__info">
+                  <p class="profile__info-text-1">Name:</p>
+                  <p class="profile__info-text-2">Husen Seid</p>
+                </div>
+
+                <div class="profile__info">
+                  <p class="profile__info-text-1">Birth Date:</p>
+                  <p class="profile__info-text-2">12.12.2003</p>
+                </div>
+
+                <div class="profile__info">
+                  <p class="profile__info-text-1">Balance:</p>
+                  <p
+                    class="profile__info-text-2 profile__info-text-2--underline"
+                  >
+                    15.08.1998
+                  </p>
+                </div>
+
+                <div class="profile__info">
+                  <p class="profile__info-text-1">State:</p>
+                  <div
+                    class="profile__active-check-container profile__info-text-2 profile__info-text-2--underline"
+                  >
+                    <label for="active" class="profile__active-check">
+                      <input type="checkbox" id="active" checked />
+                      <span class="profile__active-check-circle"></span>
+                    </label>
+                    <p class="profile__active-check-text">active</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile__right">
+              <p class="profile__comment-heading">Comment:</p>
+              <p class="profile__comment-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci temporibus officia natus accusamus molestias recusandae
+                quasi sed architecto sunt omnis aut, quibusdam porro et dolorem
+                consequuntur, error repellat blanditiis rerum.
+              </p>
+            </div>
+          </div>
+
+          <div class="driver-data__folders">
+            <div class="driver-data__folder driver-data__folder--blue">
+              <i class="fa-regular fa-folder-open"></i>
+              <div class="driver-data__folders-texts">
+                <p class="driver-data__folders-heading">Total Orders</p>
+                <p class="driver-data__folders-number">78</p>
+              </div>
+            </div>
+
+            <div class="driver-data__folder driver-data__folder--lime">
+              <i class="fa-regular fa-folder-open"></i>
+              <div class="driver-data__folders-texts">
+                <p class="driver-data__folders-heading">Total Orders</p>
+                <p class="driver-data__folders-number">10</p>
+              </div>
+            </div>
+
+            <div class="driver-data__folder driver-data__folder--yellow">
+              <i class="fa-regular fa-folder-open"></i>
+              <div class="driver-data__folders-texts">
+                <p class="driver-data__folders-heading">Total Orders</p>
+                <p class="driver-data__folders-number">Order skip</p>
+              </div>
+            </div>
+
+            <div class="driver-data__folder driver-data__folder--green">
+              <i class="fa-regular fa-folder-open"></i>
+              <div class="driver-data__folders-texts">
+                <p class="driver-data__folders-heading">Total Orders</p>
+                <p class="driver-data__folders-number">Rate</p>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+            <div class="driver-data__folder driver-data__folder--red">
+              <i class="fa-regular fa-folder-open"></i>
+              <div class="driver-data__folders-texts">
+                <p class="driver-data__folders-heading">Total Orders</p>
+                <p class="driver-data__folders-number">Cash</p>
+              </div>
+            </div>
+
+            <div class="driver-data__folder driver-data__folder--purple">
+              <i class="fa-regular fa-folder-open"></i>
+              <div class="driver-data__folders-texts">
+                <p class="driver-data__folders-heading">Total Orders</p>
+                <p class="driver-data__folders-number">Card</p>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+
+          <div class="driver-data__profile profile">
+            <div class="profile__left">
+              <div class="profile__pfp-placeholder">
+                <img src="../images/pfp-placeholder.svg" alt="" />
+              </div>
+              <div class="profile__infos">
+                <div class="profile__info">
+                  <p class="profile__info-text-1">Name:</p>
+                  <p class="profile__info-text-2">Husen Seid</p>
+                </div>
+
+                <div class="profile__info">
+                  <p class="profile__info-text-1">Birth Date:</p>
+                  <p class="profile__info-text-2">12.12.2003</p>
+                </div>
+
+                <div class="profile__info">
+                  <p class="profile__info-text-1">Balance:</p>
+                  <p
+                    class="profile__info-text-2 profile__info-text-2--underline"
+                  >
+                    15.08.1998
+                  </p>
+                </div>
+
+                <div class="profile__info">
+                  <p class="profile__info-text-1">State:</p>
+                  <div
+                    class="profile__active-check-container profile__info-text-2 profile__info-text-2--underline"
+                  >
+                    <p>active</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile__right">
+              <p class="profile__comment-heading">Comment:</p>
+              <p class="profile__comment-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci temporibus officia natus accusamus molestias recusandae
+                quasi sed architecto sunt omnis aut, quibusdam porro et dolorem
+                consequuntur, error repellat blanditiis rerum.
+              </p>
+            </div>
+            <div class="profile__tags-container">
+              <div class="profile__tags">
+                <div class="profile__tag profile__tag--blue">
+                  <div
+                    class="profile__tags-img-container profile__tags-img-container--blue"
+                  >
+                    <img src="../images/arrow.svg" alt="tag icon" />
+                  </div>
+                  <p>Order accept 23</p>
+                </div>
+
+                <div class="profile__tag profile__tag--red">
+                  <div
+                    class="profile__tags-img-container profile__tags-img-container--red"
+                  >
+                    <img src="../images/close.svg" alt="tag icon" />
+                  </div>
+                  <p>Order cancel 10</p>
+                </div>
+
+                <div class="profile__tag profile__tag--orange">
+                  <div
+                    class="profile__tags-img-container profile__tags-img-container--orange"
+                  >
+                    <img src="../images/order.svg" alt="tag icon" />
+                  </div>
+                  <p>Order skip 7</p>
+                </div>
+
+                <div class="profile__tag profile__tag--green">
+                  <div
+                    class="profile__tags-img-container profile__tags-img-container--green"
+                  >
+                    <img src="../images/star.svg" alt="tag icon" />
+                  </div>
+                  <p>Rate 5</p>
+                </div>
+
+                <div class="profile__tag profile__tag--purple">
+                  <div
+                    class="profile__tags-img-container profile__tags-img-container--purple"
+                  >
+                    <img src="../images/bitcoin.svg" alt="tag icon" />
+                  </div>
+                  <p>Cash 125,000</p>
+                </div>
+
+                <div class="profile__tag profile__tag--black">
+                  <div
+                    class="profile__tags-img-container profile__tags-img-container--black"
+                  >
+                    <img src="../images/credit-card.svg" alt="tag icon" />
+                  </div>
+                  <p>Card 0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="../scripts/sidebar.js"></script>
+    <script src="../scripts/state.js"></script>
+  </body>
+</html>
