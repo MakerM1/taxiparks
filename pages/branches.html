@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -18,7 +19,8 @@
     <link rel="stylesheet" href="../css/genera.css" />
     <link rel="stylesheet" href="../css/sidebar.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/moderators.css" />
+    <link rel="stylesheet" href="../css/clients.css" />
+    <link rel="stylesheet" href="../css/shift.css" />
   </head>
   <body>
     <div class="main-container">
@@ -81,19 +83,19 @@
               >
             </li>
             <li class="aside-nav__option">
-              <a href="moderators.html"
+              <a href="car-classes.html"
                 ><i class="fa-solid fa-car"></i>
                 <p>Car classes</p></a
               >
             </li>
-            <li class="aside-nav__option">
-              <a href="branches.html"
+            <li class="aside-nav__option active">
+              <a href="#"
                 ><i class="fa-solid fa-code-branch"></i>
                 <p>Branches</p></a
               >
             </li>
-            <li class="aside-nav__option active">
-              <a href="#"
+            <li class="aside-nav__option">
+              <a href="moderators.html"
                 ><i class="fa-solid fa-users-gear"></i>
                 <p>Moderators</p></a
               >
@@ -107,7 +109,6 @@
           </ul>
         </nav>
       </aside>
-
       <main>
         <section class="header-section">
           <div class="header-section__left">
@@ -128,26 +129,106 @@
           </div>
         </section>
 
-        <section class="moderators">
-          <div action="#" class="moderators__top">
-            <h2 class="h2-style">Moderators list</h2>
-            <button class="moderators__button">Add New Moderator</button>
-          </div>
-
-          <div class="moderators__moderaotrs-list">
-            <div class="moderatrs__moderator">
-              <img src="../images/fa-solid_user.svg" alt="moderator" />
-              <p>admin</p>
+        <section class="drivers-list">
+          <form action="#" class="drivers-list__search-form">
+            <label for="nameSearch" class="h2-style"> Drivers list </label>
+            <div class="drivers-list__search-input">
+              <input
+                type="text"
+                placeholder="Search by Name"
+                id="nameSearch"
+                name="nameSearch"
+                class="drivers-list__search"
+              />
+              <button type="submit" class="drivers-list__search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
             </div>
+          </form>
+          <div>
+            <table class="shift-report__table">
+              <thead>
+                <tr>
+                  <th>&numero;</th>
+                  <th>Branche name</th>
+                  <th>Free km</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Magic City Park</td>
+                  <td>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</td>
+                  <td class="shift-report__profile-edit">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <i class="fa-regular fa-trash-can"></i>
+                  </td>
+                </tr>
 
-            <div class="moderatrs__moderator">
-              <img src="../images/fa-solid_user.svg" alt="moderator" />
-              <p>moderator</p>
-            </div>
+                <tr>
+                  <td>2</td>
+                  <td>Funlandia</td>
+                  <td>9932+GQF, Тошкент, O'zbekiston</td>
 
-            <div class="moderatrs__moderator">
-              <img src="../images/fa-solid_user.svg" alt="moderator" />
-              <p>admin 2</p>
+                  <td class="shift-report__profile-edit">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <i class="fa-regular fa-trash-can"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>3</td>
+
+                  <td>Toshkent Xalqaro Aeroporti</td>
+                  <td>13 Kumarik ko'chasi, Tashkent 100167, O'zbekiston</td>
+
+                  <td class="shift-report__profile-edit">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <i class="fa-regular fa-trash-can"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>4</td>
+
+                  <td>Сергели тумани ҳокимияти</td>
+                  <td>1 Anna Axmatova ko'chasi, Тошкент 100085, O'zbekiston</td>
+
+                  <td class="shift-report__profile-edit">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <i class="fa-regular fa-trash-can"></i>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>5</td>
+
+                  <td>Otdel Statistiki Yakkasarayskogo Rayona</td>
+                  <td>Askiya ko'chasi, Тошкент, O'zbekiston</td>
+
+                  <td class="shift-report__profile-edit">
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <i class="fa-regular fa-trash-can"></i>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="shift-report__bottom">
+              <p class="shift-report__total">Total users: 98</p>
+              <div class="shift-report__nav">
+                <p class="shift-report__nav-text">1-2 of items</p>
+                <div class="user-table__nav-options">
+                  <div class="shift-report__nav-option disabled">
+                    <i class="fa-solid fa-angle-left"></i>
+                  </div>
+                  <div class="shift-report__nav-option active">1</div>
+                  <div class="shift-report__nav-option">2</div>
+                  <div class="shift-report__nav-option">
+                    <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
