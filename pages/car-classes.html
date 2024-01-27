@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,7 +18,7 @@
     <link rel="stylesheet" href="../css/genera.css" />
     <link rel="stylesheet" href="../css/sidebar.css" />
     <link rel="stylesheet" href="../css/header.css" />
-    <link rel="stylesheet" href="../css/clients.css" />
+    <link rel="stylesheet" href="../css/car-classes.css" />
   </head>
   <body>
     <div class="main-container">
@@ -57,8 +56,8 @@
                 <p>Rides</p></a
               >
             </li>
-            <li class="aside-nav__option active">
-              <a href="#"
+            <li class="aside-nav__option">
+              <a href="clients.html"
                 ><i class="fa-solid fa-users"></i>
                 <p>Clients</p></a
               >
@@ -81,8 +80,8 @@
                 <p>Live map</p></a
               >
             </li>
-            <li class="aside-nav__option">
-              <a href="car-classes.html"
+            <li class="aside-nav__option active">
+              <a href="#"
                 ><i class="fa-solid fa-car"></i>
                 <p>Car classes</p></a
               >
@@ -108,6 +107,7 @@
           </ul>
         </nav>
       </aside>
+
       <main>
         <section class="header-section">
           <div class="header-section__left">
@@ -128,177 +128,157 @@
           </div>
         </section>
 
-        <section class="drivers-list">
-          <form action="#" class="drivers-list__search-form">
-            <label for="nameSearch" class="h2-style"> Drivers list </label>
-            <div class="drivers-list__search-input">
-              <input
-                type="text"
-                placeholder="Search by Name"
-                id="nameSearch"
-                name="nameSearch"
-                class="drivers-list__search"
-              />
-              <button type="submit" class="drivers-list__search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div>
-          </form>
-          <table class="drivers-list__table">
+        <section class="car-classes">
+          <div action="#" class="car-classes__top">
+            <h2 class="h2-style">Car classes list</h2>
+            <button class="car-classes__button">Add Car classes</button>
+          </div>
+          <table class="car-classes__table">
             <thead>
               <tr>
-                <th></th>
+                <th>
+                  <input type="checkbox" />
+                </th>
                 <th>User</th>
-                <th>Total drivers-list</th>
-                <th>Total finished</th>
-                <th>Home Location</th>
-                <th>Work Location</th>
+                <th>Starting value</th>
+                <th>Free km</th>
+                <th>Per km value</th>
+                <th>Waiting time</th>
+                <th>Out of branch</th>
                 <th></th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>
-                  <img src="../images/comment-icon.svg" alt="comment icon" />
+                  <input type="checkbox" />
                 </td>
                 <td>
-                  <div class="drivers-list__profile">
+                  <div class="car-classes__profile">
                     <img src="../images/profile-pictures/pfp-7.png" alt="pfp" />
-                    <div class="drivers-list__profile-info">
-                      <p class="drivers-list__name">Sierra Ferguson</p>
-                      <a href="tel:+998994364615" class="drivers-list__phone">
+                    <div class="car-classes__profile-info">
+                      <p class="car-classes__name">Sierra Ferguson</p>
+                      <a href="tel:+998994364615" class="car-classes__phone">
                         +998 (99) 436-46-15</a
                       >
                     </div>
                   </div>
                 </td>
-                <td>132</td>
-                <td>6</td>
-                <td>
-                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
-                </td>
-                <td>
-                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
-                </td>
-                <td class="drivers-list__profile-edit">
-                  <i class="fa-regular fa-pen-to-square"></i>
-                  <i class="fa-regular fa-trash-can"></i>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="../images/comment-icon.svg" alt="comment icon" />
-                </td>
-                <td>
-                  <div class="drivers-list__profile">
-                    <img src="../images/profile-pictures/pfp-8.png" alt="pfp" />
-                    <div class="drivers-list__profile-info">
-                      <p class="drivers-list__name">Sierra Ferguson</p>
-                      <a href="tel:+998994364615" class="drivers-list__phone">
-                        +998 (99) 436-46-15</a
-                      >
-                    </div>
-                  </div>
-                </td>
-                <td>10</td>
+                <td>3000</td>
+                <td>0</td>
+                <td>1200</td>
                 <td>3</td>
-                <td>
-                  <p>21 Hamidulla Oripov ko'chasi, Тошкент, O'zbekiston</p>
-                </td>
-                <td>
-                  <p>21 Hamidulla Oripov ko'chasi, Тошкент, O'zbekiston</p>
-                </td>
-                <td class="drivers-list__profile-edit">
+                <td>3</td>
+                <td class="car-classes__profile-edit">
                   <i class="fa-regular fa-pen-to-square"></i>
                   <i class="fa-regular fa-trash-can"></i>
                 </td>
               </tr>
+
               <tr>
                 <td>
-                  <img src="../images/comment-icon.svg" alt="comment icon" />
+                  <input type="checkbox" />
                 </td>
                 <td>
-                  <div class="drivers-list__profile">
+                  <div class="car-classes__profile">
+                    <img src="../images/profile-pictures/pfp-8.png" alt="pfp" />
+                    <div class="car-classes__profile-info">
+                      <p class="car-classes__name">Sierra Ferguson</p>
+                      <a href="tel:+998994364615" class="car-classes__phone">
+                        +998 (99) 436-46-15</a
+                      >
+                    </div>
+                  </div>
+                </td>
+                <td>10000</td>
+                <td>2 km</td>
+                <td>3400</td>
+                <td>5</td>
+                <td>5</td>
+                <td class="car-classes__profile-edit">
+                  <i class="fa-regular fa-pen-to-square"></i>
+                  <i class="fa-regular fa-trash-can"></i>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <input type="checkbox" />
+                </td>
+                <td>
+                  <div class="car-classes__profile">
                     <img
                       src="../images/profile-pictures/pfp-10.png"
                       alt="pfp"
                     />
-                    <div class="drivers-list__profile-info">
-                      <p class="drivers-list__name">Juan Steward</p>
-                      <a href="tel:+998994364615" class="drivers-list__phone">
+                    <div class="car-classes__profile-info">
+                      <p class="car-classes__name">Juan Steward</p>
+                      <a href="tel:+998994364615" class="car-classes__phone">
                         +998 (99) 436-46-15</a
                       >
                     </div>
                   </div>
                 </td>
-                <td>100</td>
-                <td>12</td>
-                <td>
-                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
-                </td>
-                <td>
-                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
-                </td>
-                <td class="drivers-list__profile-edit">
+                <td>1000</td>
+                <td>12 km</td>
+                <td>5600</td>
+                <td>2</td>
+                <td>2</td>
+                <td class="car-classes__profile-edit">
                   <i class="fa-regular fa-pen-to-square"></i>
                   <i class="fa-regular fa-trash-can"></i>
                 </td>
               </tr>
+
               <tr>
                 <td>
-                  <img src="../images/comment-icon.svg" alt="comment icon" />
+                  <input type="checkbox" />
                 </td>
                 <td>
-                  <div class="drivers-list__profile">
+                  <div class="car-classes__profile">
                     <img
                       src="../images/profile-pictures/pfp-11.png"
                       alt="pfp"
                     />
-                    <div class="drivers-list__profile-info">
-                      <p class="drivers-list__name">Juan Steward</p>
-                      <a href="tel:+998994364615" class="drivers-list__phone">
+                    <div class="car-classes__profile-info">
+                      <p class="car-classes__name">Juan Steward</p>
+                      <a href="tel:+998994364615" class="car-classes__phone">
                         +998 (99) 436-46-15</a
                       >
                     </div>
                   </div>
                 </td>
-                <td>7</td>
-                <td>1</td>
-                <td>
-                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
-                </td>
-                <td>
-                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
-                </td>
-                <td class="drivers-list__profile-edit">
+                <td>5000</td>
+                <td>7 km</td>
+                <td>1400</td>
+                <td>3</td>
+                <td>3</td>
+                <td class="car-classes__profile-edit">
                   <i class="fa-regular fa-pen-to-square"></i>
                   <i class="fa-regular fa-trash-can"></i>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <img src="../images/comment-icon.svg" alt="comment icon" />
+                  <input type="checkbox" />
                 </td>
                 <td>
-                  <div class="drivers-list__profile">
+                  <div class="car-classes__profile">
                     <img src="../images/profile-pictures/pfp-9.png" alt="pfp" />
-                    <div class="drivers-list__profile-info">
-                      <p class="drivers-list__name">Juan Steward</p>
-                      <a href="tel:+998994364615" class="drivers-list__phone">
+                    <div class="car-classes__profile-info">
+                      <p class="car-classes__name">Juan Steward</p>
+                      <a href="tel:+998994364615" class="car-classes__phone">
                         +998 (99) 436-46-15</a
                       >
                     </div>
                   </div>
                 </td>
-                <td>13</td>
-                <td>7</td>
-                <td>
-                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
-                </td>
-                <td>
-                  <p>пл. Беш Агач, Furkat Street, Tashkent, O'zbekiston</p>
-                </td>
-                <td class="drivers-list__profile-edit">
+                <td>7000</td>
+                <td>0</td>
+                <td>2800</td>
+                <td>44</td>
+                <td>4</td>
+                <td class="car-classes__profile-edit">
                   <i class="fa-regular fa-pen-to-square"></i>
                   <i class="fa-regular fa-trash-can"></i>
                 </td>
@@ -306,17 +286,17 @@
             </tbody>
           </table>
 
-          <div class="drivers-list__bottom">
-            <p class="drivers-list__total">Total users: 98</p>
-            <div class="drivers-list__nav">
-              <p class="drivers-list__nav-text">1-2 of items</p>
+          <div class="car-classes__bottom">
+            <p class="car-classes__total">Total users: 98</p>
+            <div class="car-classes__nav">
+              <p class="car-classes__nav-text">1-2 of items</p>
               <div class="user-table__nav-options">
-                <div class="drivers-list__nav-option disabled">
+                <div class="car-classes__nav-option disabled">
                   <i class="fa-solid fa-angle-left"></i>
                 </div>
-                <div class="drivers-list__nav-option active">1</div>
-                <div class="drivers-list__nav-option">2</div>
-                <div class="drivers-list__nav-option">
+                <div class="car-classes__nav-option active">1</div>
+                <div class="car-classes__nav-option">2</div>
+                <div class="car-classes__nav-option">
                   <i class="fa-solid fa-angle-right"></i>
                 </div>
               </div>
