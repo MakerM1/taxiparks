@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2d3e948390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>TaxiParks</title>
+    <link rel="icon" href="../images/icon-logo.svg" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/genera.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/live-map.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <aside id="sideBar">
+        <div class="aside-profile">
+          <div class="aside__pfp">
+            <img src="../images/main-pfp.png" alt="pfp" />
+          </div>
+          <div class="aside-profile__name-number">
+            <p class="aside-profile__name">Samantha</p>
+            <p class="aside-profile__number">+998 (99) 436-46-15</p>
+          </div>
+          <div class="aside-profile__quit">
+            <i class="fa-solid fa-x"></i>
+          </div>
+        </div>
+        <nav class="aside-nav">
+          <p class="aside-nav__heading"><span>MAIN</span> MENU</p>
+          <ul class="aside-nav__options">
+            <li class="aside-nav__option">
+              <a href="dashboard.html">
+                <i class="fa-solid fa-table"></i>
+                <p>Dashboard</p>
+              </a>
+            </li>
+            <li class="aside-nav__option">
+              <a href="orders.html"
+                ><i class="fa-regular fa-newspaper"></i>
+                <p>Orders</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="riders.html"
+                ><i class="fa-solid fa-user-clock"></i>
+                <p>Rides</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="clients.html"
+                ><i class="fa-solid fa-users"></i>
+                <p>Clients</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="drivers.html"
+                ><i class="fa-solid fa-user-tie"></i>
+                <p>Drivers</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="shift.html"
+                ><i class="fa-solid fa-dollar-sign"></i>
+                <p>Shift</p></a
+              >
+            </li>
+            <li class="aside-nav__option active">
+              <a href="#"
+                ><i class="fa-solid fa-globe"></i>
+                <p>Live map</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-car"></i>
+                <p>Car classes</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-code-branch"></i>
+                <p>Branches</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-users-gear"></i>
+                <p>Moderators</p></a
+              >
+            </li>
+            <li class="aside-nav__option">
+              <a href="#"
+                ><i class="fa-solid fa-sliders"></i>
+                <p>Settings</p></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <section class="header-section">
+          <div class="header-section__left">
+            <i class="fa-solid fa-bars" id="hamburgerMenu"></i>
+            <div class="header-section__texts">
+              <p class="header-section__welcoming">
+                Good Morning, <span>M</span>aharram 👋
+              </p>
+              <p class="header-section__messages">
+                you have <a href="#">1 new message</a>
+              </p>
+            </div>
+          </div>
+          <div class="header-section__right">
+            <a href="../index.html" class="header-section__leave">
+              <img src="../images/leave-icon.svg" alt="leave" />
+            </a>
+          </div>
+        </section>
+
+        <section class="live-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191884.8398715317!2d69.11455698909332!3d41.28273794623363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2sge!4v1706348263750!5m2!1sen!2sge"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
+      </main>
+    </div>
+    <script src="../scripts/sidebar.js"></script>
+  </body>
+</html>

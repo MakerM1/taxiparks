@@ -1,0 +1,5 @@
+.live-map iframe {
+    width: 100%;
+    height: 635px;
+    border-radius: 20px;
+}
